@@ -53,7 +53,7 @@ export async function getUserData() {
 export async function updatePatientData(patientAddress, contractName, newData) {
     const token = localStorage.getItem("authToken");
     const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
-    const res = await fetch(`${apiBaseUrl}/api/auth/updatePatientData`, {
+    const res = await fetch(`${apiBaseUrl}/updatePatientData`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',

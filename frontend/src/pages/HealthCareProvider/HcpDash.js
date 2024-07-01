@@ -9,6 +9,7 @@ export async function loader() {
   if (!token) {
     return redirect('/login'); // Redirect if no token
   }
+  console.log(token)
   const res = await getUserData();
 
   if (res.error) {
@@ -74,6 +75,8 @@ function HcpDash() {
   const renderPatientDataJSON = () => {
     return <pre>{JSON.stringify(patientData, null, 2)}</pre>;
   };
+
+
 
   return (
     <div>

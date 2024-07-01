@@ -15,7 +15,7 @@ async function fundAccount(targetAddress, amountInEther) {
     await tx.wait();
     console.log(`Funded ${targetAddress} with ${amountInEther} Ether`);
 }
-const mnemonic = "film exotic skill board oyster room reject trend sugar parade cabbage buffalo";
+const mnemonic = "stay pride salmon satisfy feel ring opinion embark hybrid phone legal glimpse";
 const hdNode = ethers.utils.HDNode.fromMnemonic(mnemonic);
 let counter = 0;
 async function getPrefundedAccount(index) {

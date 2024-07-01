@@ -4,6 +4,7 @@ import { getUserData, grantReadAccess, revokeReadAccess, grantUpdateAccess, revo
 
 export async function loader() {
   const token = localStorage.getItem('authToken');
+  console.log(token)
   if (!token) {
     return redirect('/login'); // Redirect if no token
   }
@@ -64,6 +65,8 @@ function PatientDash() {
       alert('Failed to revoke update access');
     }
   };
+
+  
 
   return (
     <div>

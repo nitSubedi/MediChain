@@ -8,7 +8,6 @@ export const requestAccount = async() => {
     return accounts;
 }
 
-export const getContract = (address, abi) => {
-    const signer = provider.getSigner();
+export const getContract = (address, abi, signer) => {
     return new ethers.Contract(address, abi, signer);
 }
